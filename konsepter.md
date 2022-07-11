@@ -5,7 +5,7 @@ Funksjonell programmering er basert på formell logikk og matematikk. Det fører
 Monader er data satt i en sammenheng, ofte implementert som en datatype som wrapper en verdi. For at en struktur skal være en monade må det være mulig å pakke verdier inn i monaden, og operere på de innpakkede verdiene med funksjoner som tar en monade og returnerer en ny.
 
 ### Definisjon
-Vi kan definere en monade som `m a`, der `a` er en verdi og `m` representerer en kontekst. Disse to verdiene sammen definerer monaden. For å pakke en verdi `a` inn i en monade `m a` brukes en funksjon som ofte kalles `return`. `return a` vil returnere en verdi av typen `m a`. *** Merk at `return`-funksjonen i utgangspunktet er noe annet enn nøkkelordet `return` som brukes i imperativ programering for å definere returverdien til en funksjon. For å operere på en monade brukes funksjonen `bind`. Bind tar en monade og en funksjon som pakker en verdi inn i en monade som en parameter. `bind` tar deretter og "pakker ut" verdien i monaden den fikk, og sender den til funksjonen.
+Vi kan definere en monade som `m a`, der `a` er en verdi og `m` representerer en kontekst. Disse to verdiene sammen definerer monaden. For å pakke en verdi `a` inn i en monade `m a` brukes en funksjon som ofte kalles `return`. `return a` vil returnere en verdi av typen `m a`. ***Merk at `return`-funksjonen i utgangspunktet er noe annet enn nøkkelordet `return`*** som brukes i imperativ programering for å definere returverdien til en funksjon. For å operere på en monade brukes funksjonen `bind`. Bind tar en monade og en funksjon som pakker en verdi inn i en monade som en parameter. `bind` tar deretter og "pakker ut" verdien i monaden den fikk, og sender den til funksjonen.
 
 ### Eksempel
 En monade som er mye brukt er Maybe-monaden. Maybe-monaden brukes for å sette en verdi i konteksten "verdi eller `null`". I kotlin er den kjent som en "nullbar variabel", og vi bruker kotlins implementasjon som eksempel.
@@ -50,12 +50,12 @@ Vi ser da at bind_nullbar tar en nullbar verdi og en funksjon som virker på ver
 ## Linser
 
 ## Either
-*** Type: Monade ***
-*** Formål: Håndtere beregninger med to typer utfall ***
+***Type: Monade***
+***Formål: Håndtere beregninger med to typer utfall***
 
 ## Promise
-*** Type: Monade? ***
-*** Formål: asynkrone og usikre beregninger ***
+***Type: Monade?***
+***Formål: asynkrone og usikre beregninger***
 
 ## Nullable
 
