@@ -59,3 +59,5 @@ Vi ser da at bind_nullbar tar en nullbar verdi og en funksjon som virker på ver
 
 ## Nullable
 
+## FlatMap?
+
